@@ -1,3 +1,10 @@
 :8080
+
 root * .
+
 file_server
+
+# Ensure proper MIME types for web manifest and icons
+header /assets/icons/site.webmanifest {
+    Content-Type "application/manifest+json"
+}
